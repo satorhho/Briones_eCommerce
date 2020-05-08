@@ -1,0 +1,6 @@
+<h1>New Item</h1>
+<% new_item = Item.new %>
+<% new_item.user_id = session[:user_id] %>
+<%= render 'form', item: new_item %>
+
+<%= link_to 'Back', :back %>
